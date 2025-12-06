@@ -40,4 +40,54 @@ typedef struct {
     int isVegetarian; 
 } Meal; 
 
-// daily plan 
+// daily plan structure
+typedef struct {
+    int mealIndices[MAX_MEALS_PER_DAY]; 
+    int numMeals;
+    float dayCost;
+} DayPlan;
+
+// Weekly plan structure 
+typedef struct {
+    DayPlan days[MAX_DAYS];
+    int numDays;
+} WeekPlan;
+
+// staples structure 
+// Order: Name;PackSize(kg/L);ServingsPerPack;PricePerPack;MealUsageCSV
+typedef struct {
+    char name[MAX_NAME_LEN];
+    float packSize;          
+    float servingsPerPack;  
+    float pricePerPack;      
+    char mealUsageStr[MAX_MEAL_USAGE_LEN]; // New: CSV string of usage, e.g., "0:1.0,3:0.1"
+} Staple;
+
+//plan structure 
+typedef struct {
+    float weeklyBudget;
+    int daysToPlan;
+    int mealsPerDay;
+    int targetCaloriesPerDay;
+    int targetProteinPerDay;
+    int vegetarianMode;
+    int maxRepeatsPerMeal;
+} PlannerConfig;
+
+// weekly statistics structure 
+typedef struct {
+    float totalCost;
+    float avgDailyCalories;
+    float avgDailyProtein;
+    int categoryCount[MAX_DAYS + 1];
+    int totalMeals;
+    int vegetarianMeals;
+} WeekStats;
+
+// global data arrays 
+Meal meals[MAX_MEALS];
+int mealCount = 0;
+WeekPlan currentPlan = { .numDays = 0 }; // Initialize empty plan
+Staple staples[MAX_STAPLES];
+int stapleCount = 0;
+
