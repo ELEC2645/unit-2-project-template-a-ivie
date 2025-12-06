@@ -91,3 +91,61 @@ WeekPlan currentPlan = { .numDays = 0 }; // Initialize empty plan
 Staple staples[MAX_STAPLES];
 int stapleCount = 0;
 
+void flushInputBuffer(void) {
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+}
+
+int getValidIntInput(const char *prompt, int min, int max) {
+    int value;
+    int inputStatus;
+    do {
+        printf("%s", prompt);
+        inputStatus = scanf("%d", &value);
+        flushInputBuffer();
+        if (inputStatus != 1 || value < min || value > max) {
+            printf("Invalid input. Please enter a whole number between %d and %d.\n", min, max);
+            inputStatus = 0;
+        }
+    } while (inputStatus != 1);
+    return value;
+}
+
+float getValidFloatInput(const char *prompt, float min) {
+    float value;
+    int inputStatus;
+    do {
+        printf("%s", prompt);
+        inputStatus = scanf("%f", &value);
+        flushInputBuffer();
+        if (inputStatus != 1 || value < min) {
+            printf("Invalid input. Please enter a numerical value >= %.2f.\n", min);
+            inputStatus = 0;
+        }
+    } while (inputStatus != 1);
+    return value;
+}
+
+void cleanStringInput(char *str) {
+    size_t len = strlen(str);
+    if (len > 0 && str[len - 1] == '\n') str[len - 1] = '\0';
+    if (len > 1 && str[len - 2] == '\r') str[len - 2] = '\0';
+}
+
+//prompts the user to continue or exit 
+int continueToMenu() {
+    char response[5];
+    printf("\n Press enter to continue, or q to quit: ");
+    if (fgets(response, sizeof(response), stdin) == NULL) {
+        return 0; // Error reading, treat as quit
+    }
+
+// makes sure that when the user enters q it allows them to quit 
+    cleanStringInput(response);
+    if (tolower(response[0]) == 'q') {
+        return 0; // Quit
+    }
+    return 1; // Continue
+}
+
+
