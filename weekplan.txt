@@ -1,0 +1,32 @@
+Weekly Meal Plan Report
+=========================
+
+Day 1 (Total Cost: 6.00 Naira, Calories: 1540, Protein: 53 g):
+- Moi Moi and Pap (Original Cost: 1.90 Naira, 480 kcal, 16 g protein)
+- Beans Porridge with Garri (Original Cost: 2.10 Naira, 540 kcal, 19 g protein)
+- Ewa Aganyin and Agege Bread (Original Cost: 2.00 Naira, 520 kcal, 18 g protein)
+
+Day 2 (Total Cost: 7.10 Naira, Calories: 1530, Protein: 69 g):
+- Suya Chicken and Salad (Original Cost: 3.30 Naira, 560 kcal, 32 g protein)
+- Bread and Fried Egg Sandwich (Original Cost: 1.80 Naira, 450 kcal, 19 g protein)
+- Ewa Aganyin and Agege Bread (Original Cost: 2.00 Naira, 520 kcal, 18 g protein)
+
+Day 3 (Total Cost: 7.10 Naira, Calories: 1520, Protein: 63 g):
+- Moi Moi and Pap (Original Cost: 1.90 Naira, 480 kcal, 16 g protein)
+- Stir Fry Noodles with Veg (Original Cost: 1.90 Naira, 480 kcal, 15 g protein)
+- Suya Chicken and Salad (Original Cost: 3.30 Naira, 560 kcal, 32 g protein)
+
+Day 4 (Total Cost: 8.00 Naira, Calories: 1650, Protein: 77 g):
+- Bread and Fried Egg Sandwich (Original Cost: 1.80 Naira, 450 kcal, 19 g protein)
+- Shawarma Style Chicken Wrap (Original Cost: 3.00 Naira, 620 kcal, 28 g protein)
+- Grilled Fish and Plantain (Original Cost: 3.20 Naira, 580 kcal, 30 g protein)
+
+Day 5 (Total Cost: 6.30 Naira, Calories: 1600, Protein: 56 g):
+- Indomie Noodles with Sausage (Original Cost: 2.00 Naira, 520 kcal, 17 g protein)
+- Beans Porridge with Garri (Original Cost: 2.10 Naira, 540 kcal, 19 g protein)
+- Sweet Potato and Egg Sauce (Original Cost: 2.20 Naira, 540 kcal, 20 g protein)
+
+Day 6 (Total Cost: 7.30 Naira, Calories: 1640, Protein: 69 g):
+- Boiled Plantain and Egg Sauce (Original Cost: 2.30 Naira, 560 kcal, 21 g protein)
+- Grilled Fish and Plantain (Original Cost: 3.20 Naira, 580 kcal, 30 g protein)
+- Indomie Noodles with Egg (Original Cost: 1.80 Naira, 500 kcal, 18 g protein)
