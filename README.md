@@ -1,37 +1,12 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=21901730)
 # ELEC2645 Unit 2 Project Template
 
-** PLEASE DELETE THIS README AND REPLACE IT WITH YOUR OWN README.md FILE DESCRIBING YOUR PROJECT **
+Background and Motivation:
+This program will help students plan a week of Nigerian meals while staying within their specified calorie and protein goals and also estimating how many shared staple ingredients (such as rice, oil and butter) are needed so that flatmates can split the cost fairly while simultaneously reducing food waste.
+
+I chose to build this program because I am a student of Nigerian heritage, living in a shared flat, who cares deeply about fitness, nutrition and budgeting. The calorie and protein tracking 
+apps that are currently available on the AppStore are not designed for Nigerian cuisine, as they cannot accurately estimate the amount of calories or protein in meals like pounded yam, egusi soup, efo riro or jollof rice (attached are some images for reference). Similarly, many existing meal planning apps do not include African foods at all, because these apps are mainly designed for the Western diet, and none account for uni students who need to save money (and want to reduce food waste) by sharing staple ingredients with flatmates. 
+
+This highlighted a clear gap in the market. Nigerian meals have different macronutrient profiles, portion sizes and prices compared to Western meals which renders the traditional apps on the market useless. By combining calorie and protein estimation with budget planning and staple ingredient sharing analysis specifically for Nigerian foods, this program will provide a relevant and practical solution to a severely overlooked demographic. I will implement clear functions for data loading; meal management, planning and statistics; and staple ingredient analysis. Meals and staples will be stored in a .txt file and data will be read from them. The core meal planner will utilise a simple scoring algorithm that ranks meals based on cost, protein, calorie count and variety, then apply constraints such as budget limits, vegetarian mode and calorie / protein limits to build a weekly plan. Additional functions will calculate totals and averages for weekly statistics, the number of packs needed and cost per person (which will require C’s math.h library). Altogether, this program should hopefully allow a user to track their fitness goals, without having to forfeit cultural meals.
 
 
-This is the basic code for a command line application which you should use for your Unit 2 project.
-
-The code has separated the menu handling code in `main.c` and the function implementations in `funcs.c`. You should add your code to `funcs.c` (or you can create new files if you wish), and update `main.c` to call your functions from the menu.
-
-
-### 1 Run code
-
-You can build the code as we have been using in the labs with 
-`gcc main.c funcs.c -o main.out -lm` (the `-lm` is required to link the math library). You can also use `make -B` to force a rebuild using the provided `Makefile`.
-
-Then run the code with `./main.out`
-
-
-### 2 The assignment
-
-Please read the assignment brief on the Minerva page for details of what you need to implement. 
-
-
-
-### 3 Test command
-
-The `test.sh` script is provided to check that your code compiles correctly. This is what the autograder will use to check your submission. You can run it with `bash test.sh` or `./test.sh` or just `make test`. 
-
-You do not need to modify this script, but you can look at it to see what it does.
-
-
-### 4 Submit Solution
-
-Use the same method as previous labs to commit and push your code to your GitHub repository for the autograder to check. 
-
-In your final journal post, please include a link to your GitHub repository containing your code  *and* a zip file of your code as an attachment.
